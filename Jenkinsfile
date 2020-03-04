@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'npm install'
-                bat 'grunt'
+                bat 'echo "Hello World"'
             }
         }
     }
