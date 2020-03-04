@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'mcr.microsoft.com/windows/nanoserver:10.0.14393.1066' } }
+    agent { docker { image 'microsoft/dotnet:nanoserver' } }
     stages {
         stage('build') {
             steps {
-                bat 'echo "Hello World"'
+                powershell 'echo "Hello World"'
             }
         }
     }
