@@ -1,7 +1,7 @@
 {
-  "name": "ecard",
+  "name": "Webinar-website",
   "version": "1.0.0",
-  "description": "Online eCard made by Ollie Bannister",
+  "description": "An example website made by Ollie Bannister for the deployments webinar.",
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-cssmin": "latest",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Olwiba/Ecard.git"
+    "url": "git+https://github.com/Olwiba/Webinar-website-example.git"
   },
   "author": "olwiba",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Olwiba/Ecard/issues"
+    "url": "https://github.com/Olwiba/Webinar-website-example/issues"
   },
-  "homepage": "https://github.com/Olwiba/Ecard#readme"
+  "homepage": "https://github.com/Olwiba/Webinar-website-example#readme"
 }
