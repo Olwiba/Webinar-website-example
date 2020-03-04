@@ -1,0 +1,21 @@
+// Breakpoints
+// 
+// .break-sm - 340px
+// .break-lg - 1024px
+
+$break-sm: 340px;
+$break-lg: 1024px;
+
+// Small Screens
+@mixin break-sm {
+	@media screen and (max-width: #{$break-md - .01em}) {
+		@content;
+	}
+}
+
+// Large Screens
+@mixin break-lg {
+	@media screen and (min-width: #{$break-lg}) {
+		@content;
+	}
+}
