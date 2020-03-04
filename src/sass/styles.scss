@@ -10,8 +10,7 @@ header,
 main, 
 footer {
     position: relative;
-    z-index: 2;
-    pointer-events: none;
+    z-index: 3;
     min-width: 340px;
 }
 
@@ -72,6 +71,7 @@ header {
 .logo {
     width: 100px;
     height: 100px;
+    padding-left: 26px;
 
     @include break-lg() {
         width: 150px;
@@ -90,6 +90,7 @@ header {
         color: #FFEEEE;
         text-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
         margin: 0 0 24px;
+        user-select: none;
 
         @include break-lg() {
             font-size: 12vh;
@@ -114,7 +115,8 @@ header {
         font-size: 48px;
         color: #FFEEEE;
         text-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
-        margin: 0 0 24px;
+        margin: 0 0 48px;
+        user-select: none;
 
         @include break-lg() {
             font-size: 7vh;
@@ -175,6 +177,32 @@ header {
 
     66% {
         text-shadow: -6px 0 14px #79e5fd, 0 5px 3px #000;
+    }
+}
+
+// Buttons
+.error-buttons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    // .error-buttons__button
+    &__button {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #164B74;
+        background-color: #FFEEEE;
+        padding: 16px;
+        margin: 0 10px;
+        border: 1px solid #21d4fd;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: box-shadow 50ms ease-in-out;
+
+        &:hover {
+            box-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
+        }
     }
 }
 

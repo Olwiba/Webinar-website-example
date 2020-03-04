@@ -308,8 +308,7 @@ header,
 main,
 footer {
   position: relative;
-  z-index: 2;
-  pointer-events: none;
+  z-index: 3;
   min-width: 340px; }
 
 main {
@@ -356,7 +355,8 @@ header {
 
 .logo {
   width: 100px;
-  height: 100px; }
+  height: 100px;
+  padding-left: 26px; }
   @media screen and (min-width: 1024px) {
     .logo {
       width: 150px; } }
@@ -369,7 +369,8 @@ header {
     font-size: 64px;
     color: #FFEEEE;
     text-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
-    margin: 0 0 24px; }
+    margin: 0 0 24px;
+    user-select: none; }
     @media screen and (min-width: 1024px) {
       .content__title {
         font-size: 12vh; } }
@@ -384,7 +385,8 @@ header {
     font-size: 48px;
     color: #FFEEEE;
     text-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
-    margin: 0 0 24px; }
+    margin: 0 0 48px;
+    user-select: none; }
     @media screen and (min-width: 1024px) {
       .content__subheading {
         font-size: 7vh; } }
@@ -424,6 +426,25 @@ header {
     text-shadow: -6px 0 14px #137f97, 0 5px 3px #000; }
   66% {
     text-shadow: -6px 0 14px #79e5fd, 0 5px 3px #000; } }
+
+.error-buttons {
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+  .error-buttons__button {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #164B74;
+    background-color: #FFEEEE;
+    padding: 16px;
+    margin: 0 10px;
+    border: 1px solid #21d4fd;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 50ms ease-in-out; }
+    .error-buttons__button:hover {
+      box-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000; }
 
 .footer-text {
   font-family: 'Source Sans Pro', sans-serif;
