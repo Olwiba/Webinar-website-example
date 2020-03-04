@@ -1,2 +1,4 @@
 ![](/octopus-raygun.png)
-# Webinar-website-example
+# Octopus X Raygun demo website
+
+This is a simple website that will generate some errors.
