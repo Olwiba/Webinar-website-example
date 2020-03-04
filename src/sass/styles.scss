@@ -34,26 +34,13 @@ footer {
 }
 
 // Background
-$overlayOpacity: 0.3;
 
 .background {
-    background-color: #261f4b;
-    background-image: url('../images/WellingtonFirework-min.jpg');
+    background-color: #1B5989;
+    background-image: url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-    &:after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        min-width: 340px;
-        height: 100%;
-        background: linear-gradient(to top, rgba(183, 33, 255, $overlayOpacity), rgba(33, 212, 253, $overlayOpacity));
-    }
 
     // .background__overlay
     &__overlay {
@@ -88,7 +75,6 @@ header {
 
     @include break-lg() {
         width: 150px;
-        height: 150px;
     }
 }
 
@@ -189,177 +175,6 @@ header {
 
     66% {
         text-shadow: -6px 0 14px #79e5fd, 0 5px 3px #000;
-    }
-}
-
-.links {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    pointer-events: auto;
-    white-space: nowrap;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-
-    @include break-lg() {
-        display: inline-block;
-        pointer-events: none;
-        overflow: inherit;
-    }
-
-    // .links__link
-    &__link {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        margin-left: 8px;
-        transition: transform 100ms ease-out;
-
-        &:nth-child(1) {
-            margin-left: 0;
-        }
-
-        @include break-lg() {
-            width: 100px;
-            height: 100px;
-            margin-left: 16px;            
-        }
-    }
-}
-
-.link-helptip {
-    position: relative;
-    
-    // .link-helptip__icon
-    &__icon {
-        width: 100%;
-        height: 100%;
-        display: block;
-        cursor: pointer;
-        pointer-events: auto;
-        
-        &:hover,
-        &:active {
-            transform: scale(1.2);
-        }
-
-        &:hover,
-        &:active {
-            .link-helptip__arrow,
-            .link-helptip__tip {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-
-        // .link-helptip__icon--locked
-        &--locked {
-            cursor: not-allowed;
-        }
-    }
-
-    // .link-helptip__arrow
-    &__arrow {
-        display: block;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 300ms, visibility 500ms ease-in-out;
-        position: absolute;
-        top: -15px;
-        left: 50%;
-        transform: rotate(45deg) translate(calc(-50% + 8px));
-        width: 12px;
-        height: 12px;
-        background-color: #21d4fd;
-        z-index: 1;
-        border-right: 2px solid #21d4fd;
-        border-bottom: 2px solid #21d4fd;
-    }
-
-    // .link-helptip__tip
-    &__tip {
-        display: block;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 300ms, visibility 500ms ease-in-out;
-        position: absolute;
-        left: 50%;
-        bottom: calc(100% + 8px);
-        padding-bottom: 8px;
-        width: auto;
-        padding: 8px 16px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
-        border-width: 2px;
-        border-style: solid;
-        border-image: linear-gradient(to top, #21d4fd, transparent 40%, transparent 60%, #21d4fd 100%) 1;
-        border-radius: 4px;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 1.3rem;
-        line-height: 1.5;
-        color: #FFEEEE;
-        text-align: center;
-        transform: translateX(calc(-50% + 8px));
-    }
-}
-
-.link-helptip__icon:hover+.link-helptip__arrow,
-.link-helptip__icon:hover+.link-helptip__arrow+.link-helptip__tip {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-arrows {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 16px;
-    color: #FFEEEE;
-    text-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
-
-    @media screen and (min-width: 680px) {
-        display: none;
-    }
-
-    // .scroll-arrows__left
-    &__left {
-        float: left;
-        margin-left: 16px;
-    }
-
-    // .scroll-arrows__right
-    &__right {
-        float: right;
-        margin-right: 16px;
-    }
-}
-
-.location {
-    display: table;
-    margin: 0 auto;
-    padding: 0;
-    transform: translateX(-10px);
-
-    @include break-lg() {
-        transform: translateX(-40px);
-    }
-
-    // .location__icon
-    &__icon {
-        display: inline-block;
-        float: left;
-        width: 60px;
-        height: 60px;
-    }
-
-    // .location__passage
-    &__passage {
-        display: inline-block;
-        float: right;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 24px;
-        line-height: 60px;
-        margin: 0;
-        color: #FFEEEE;
-        text-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
     }
 }
 
