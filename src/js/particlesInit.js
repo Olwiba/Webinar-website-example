@@ -76,8 +76,7 @@ var particlesConfig = {
             "mode": "repulse"
         },
         "onclick": {
-            "enable": true,
-            "mode": "push"
+            "enable": false
         },
         "resize": true
         },

@@ -29,11 +29,10 @@ module.exports = function (grunt) {
       build: {
         files: {
           'dist/js/scripts.min.js': 'src/js/*.js',
-          // Multiple files: 'dist/js/magic.min.js': ['src/js/magic.js', 'src/js/magic2.js']
         }
       }
     },
-    // Configure sass
+    // configure sass to convert .scss -> .css ----------------------------------
     sass: {
       options: {
           sourceMap: true
@@ -55,21 +54,20 @@ module.exports = function (grunt) {
         }
       }
     },
-    // configure watch to auto update ----------------
+    // configure watch to auto update -------------------------------------------
     watch: {
 
-      // for stylesheets, watch css and less files 
-      // only run less and cssmin stylesheets: { 
+      // for stylesheets, watch css and less files
+      // only run less and cssmin stylesheets:
       files: ['src/css/*.css', 'src/sass/*.scss'],
       tasks: ['sass', 'cssmin'],
 
-      // for scripts, run jshint and uglify 
+      // for scripts, run jshint and uglify
       scripts: {
         files: 'src/**/*.js', tasks: ['jshint', 'uglify']
       }
     }
 
-    
 
   });
 
@@ -77,10 +75,9 @@ module.exports = function (grunt) {
   // LOAD GRUNT PLUGINS ========================================================
   // ===========================================================================
   // we can only load these if they are in our package.json
-  // make sure you have run npm install so our app can find these
+  // make sure you have run npm/yarn install so our app can find these
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  //grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');

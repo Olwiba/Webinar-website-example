@@ -29,7 +29,10 @@
   function init() {
     $errOneTrigger.click(errorOne);
     $errTwoTrigger.click(errorTwo);
-    $errThreeTrigger.click(errorThree);
+    $errThreeTrigger.click(function() {
+      event.preventDefault();
+      errorThree();
+    });
   }
 
   $(document).ready(function() {
