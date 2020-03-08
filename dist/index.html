@@ -1,49 +1,83 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Exmaple website</title>
-        <meta name="description" content="An example website made by Ollie Bannister for the deployments webinar.">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 
-        <link rel="icon" type="ico" href="raygun.ico">
-        <link rel="apple-touch-icon" href="raygun.ico">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Exmaple website</title>
+    <meta name="description" content="An example website made by Ollie Bannister for the deployments webinar.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 
-        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Source+Sans+Pro" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
-    <body class="background">
-        <!-- particles.js container -->
-        <div id="particles-js"></div>
+    <link rel="icon" type="ico" href="raygun.ico">
+    <link rel="apple-touch-icon" href="raygun.ico">
 
-        <!-- body -->
-        <div class="background__overlay">
-            <header>
-                <img src="images/raygun-logotype.svg" alt="Raygun logo" class="logo"/>
-            </header>
-            <main>
-                <div class="content">
-                    <h1 class="content__title">
-                        D<span>e</span>mo
-                    </h1>
-                    <h2 class="content__subheading">P<span>r</span>ob<span>l</span>im<span>a</span>ti<span>c</span> We<span>b</span>si<span>t</span>e</h2>
-                    <ul class="error-buttons">
-                        <li class="error-buttons__button js-trigger-error-1">Trigger Error 1</li>
-                        <li class="error-buttons__button js-trigger-error-2">Trigger Error 2</li>
-                        <li class="error-buttons__button js-trigger-error-3">Trigger Error 3</li>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="background">
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- body -->
+    <div class="background__overlay">
+        <main>
+            <div class="content">
+                <h1 class="content__title">
+                    D<span>e</span>mo
+                </h1>
+                <h2 class="content__subheading">P<span>r</span>ob<span>l</span>im<span>a</span>ti<span>c</span>
+                    We<span>b</span>si<span>t</span>e</h2>
+                <!-- multistep form -->
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active">Account Setup</li>
+                        <li>Social Profiles</li>
+                        <li>Personal Details</li>
                     </ul>
-                </div>
-            </main>
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <h2 class="fs-title">Create your account</h2>
+                        <h3 class="fs-subtitle">This is step 1</h3>
+                        <input type="text" name="email" placeholder="Email" />
+                        <input type="password" name="pass" placeholder="Password" />
+                        <input type="password" name="cpass" placeholder="Confirm Password" />
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Social Profiles</h2>
+                        <h3 class="fs-subtitle">Your presence on the social network</h3>
+                        <input type="text" name="twitter" placeholder="Twitter" />
+                        <input type="text" name="facebook" placeholder="Facebook" />
+                        <input type="text" name="gplus" placeholder="Google Plus" />
+                        <input type="button" name="previous" class="previous action-button" value="Previous" />
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Personal Details</h2>
+                        <h3 class="fs-subtitle">We will never sell it</h3>
+                        <input type="text" name="fname" placeholder="First Name" />
+                        <input type="text" name="lname" placeholder="Last Name" />
+                        <input type="text" name="phone" placeholder="Phone" />
+                        <textarea name="address" placeholder="Address"></textarea>
+                        <input type="button" name="previous" class="previous action-button" value="Previous" />
+                        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                    </fieldset>
+                </form>
+            </div>
+        </main>
 
-            <footer>
-                <p class="footer-text">Handcrafted by Olwiba <span>|</span> Check out my <a href="https://github.com/Olwiba/Webinar-website-example">Source code</a></p>
-            </footer>
-        </div>
+        <footer>
+            <p class="footer-text">Handcrafted by Olwiba <span>|</span> Check out my <a
+                    href="https://github.com/Olwiba/Webinar-website-example">Source code</a></p>
+        </footer>
+    </div>
 
-        <!-- scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/scripts.min.js"></script>
-    </body>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
