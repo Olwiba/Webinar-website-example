@@ -180,32 +180,6 @@ header {
     }
 }
 
-// Buttons
-.error-buttons {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-
-    // .error-buttons__button
-    &__button {
-        font-family: 'Permanent Marker', cursive;
-        font-size: 1.6rem;
-        font-weight: 300;
-        color: #164B74;
-        background-color: #FFEEEE;
-        padding: 16px;
-        margin: 0 10px;
-        border: 1px solid #21d4fd;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: box-shadow 50ms ease-in-out;
-
-        &:hover {
-            box-shadow: -6px 0 14px #21d4fd, 0 5px 3px #000;
-        }
-    }
-}
-
 // Footer
 .footer-text {
     font-family: 'Source Sans Pro', sans-serif;
@@ -245,10 +219,8 @@ header {
         margin: 0 0 24px;
     }
 
-    //.signup-form__username
-    //.signup-form__password
-    &__username,
-    &__password {
+    //.signup-form__field
+    &__field {
         outline: 0;
         background: #f2f2f2;
         width: 100%;

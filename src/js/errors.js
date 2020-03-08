@@ -1,5 +1,6 @@
 (function(window, document, $) {
-  // Vars
+  var enableErrors = false;
+
   var $errOneTrigger = $(".js-trigger-error-1"),
     $errTwoTrigger = $(".js-trigger-error-2"),
     $errThreeTrigger = $(".js-trigger-error-3");
@@ -27,12 +28,14 @@
   }
 
   function init() {
-    $errOneTrigger.click(errorOne);
-    $errTwoTrigger.click(errorTwo);
-    $errThreeTrigger.click(function() {
-      event.preventDefault();
-      errorThree();
-    });
+    if (enableErrors) {
+      $errOneTrigger.click(errorOne);
+      $errTwoTrigger.click(errorTwo);
+      $errThreeTrigger.click(function() {
+        event.preventDefault();
+        errorThree();
+      });
+    }
   }
 
   $(document).ready(function() {
