@@ -458,6 +458,28 @@ header {
   .footer-text span {
     padding: 0 8px; }
 
+/* ---- signin form ---- */
+.signin-form {
+  position: relative;
+  z-index: 5;
+  background: #FEFEFE;
+  margin: 0 auto;
+  padding: 16px 32px;
+  max-width: 360px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8); }
+  .signin-form__username, .signin-form__password {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px; }
+
 /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
