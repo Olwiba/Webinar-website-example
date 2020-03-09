@@ -24,7 +24,10 @@ module.exports = function (grunt) {
     // configure uglify to minify js files -------------------------------------
     uglify: {
       options: {
-        banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
+        banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n',
+        sourceMap: {
+          includeSources: true
+        }
       },
       build: {
         files: {

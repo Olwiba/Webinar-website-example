@@ -35,6 +35,10 @@
         event.preventDefault();
         errorThree();
       });
+    } else {
+      $errThreeTrigger.click(function() {
+        event.preventDefault();
+      });
     }
   }
 
