@@ -192,10 +192,6 @@ header {
         pointer-events: auto;
         cursor: pointer;
     }
-
-    & span {
-        padding: 0 8px;
-    }
 }
 
 /* ---- signup form ---- */
@@ -263,6 +259,11 @@ header {
             text-decoration: none;
             cursor: pointer;
         }
+    }
+
+    //.signup-form__icon
+    &__icon {
+        width: 100px;
     }
 }
 

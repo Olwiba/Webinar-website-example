@@ -31,14 +31,7 @@
     if (enableErrors) {
       $errOneTrigger.click(errorOne);
       $errTwoTrigger.click(errorTwo);
-      $errThreeTrigger.click(function() {
-        event.preventDefault();
-        errorThree();
-      });
-    } else {
-      $errThreeTrigger.click(function() {
-        event.preventDefault();
-      });
+      $errThreeTrigger.click(errorThree);
     }
   }
 

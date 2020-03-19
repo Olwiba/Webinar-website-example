@@ -436,8 +436,6 @@ header {
     color: #21d4fd;
     pointer-events: auto;
     cursor: pointer; }
-  .footer-text span {
-    padding: 0 8px; }
 
 /* ---- signup form ---- */
 .signup-form {
@@ -486,6 +484,8 @@ header {
       color: #4CAF50;
       text-decoration: none;
       cursor: pointer; }
+  .signup-form__icon {
+    width: 100px; }
 
 /* ---- particles.js container ---- */
 #particles-js {
