@@ -1,5 +1,5 @@
 (function(window, document, $) {
-  var enableErrors = true;
+  var enableErrors = false;
 
   var $errOneTrigger = $(".js-trigger-error-1"),
     $errTwoTrigger = $(".js-trigger-error-2"),
