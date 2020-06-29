@@ -1,5 +1,5 @@
 # Simplified build step
-FROM microsoft/windowsservercore
+FROM mcr.microsoft.com/powershell
 
 RUN echo 'All built!'
 RUN $postParams = @{apiKey: 'EjA63mvyeuilmKMfdHtiPg',version: '1.0.1',ownerName: 'Ollie Bannister',emailAddress: 'ollie@raygun.com',comment: 'Some generic comment',createdAt: 22:35:01Z}
